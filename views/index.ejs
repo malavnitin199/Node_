@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/stylesheets/style.css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div class="w-full h-screen bg-green-900">
+      <form action="/create" method="POST">
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          class="h-10 rounded-md border-2 border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none"
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter your email"
+          class="h-10 rounded-md border-2 border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none"
+        />
+        <input
+          type="text"
+          name="image"
+          placeholder="Enter imageurl"
+          class="h-10 rounded-md border-2 border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none"
+        />
+
+        placeholder="Enter your email" class="h-10 rounded-md border-2
+        border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200
+        focus:outline-none" />
+        <input
+          type="text"
+          placeholder="Enter imageurl"
+          class="h-10 rounded-md border-2 border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none"
+        />
+        <input
+          type="submit"
+          value="Submit"
+          class="h-10 px-4 mt-4 bg-green-500 text-white rounded-md hover:bg-green-600 cursor-pointer"
+        />
+      </form>
+      <div class="container mx-auto p-4 mt-32 px-0">
+        <button
+          class="mb-4 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 cursor-pointer"
+          onclick="window.location.href = '/read'"
+        >
+          Read Data
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
