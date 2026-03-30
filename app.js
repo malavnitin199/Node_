@@ -34,6 +34,16 @@ app.get("/read", async (req, res) => {
   res.send(user);
 });
 
+
+
+app.get("/delete", async (req, res) => {
+  // async code to delete a user
+  let deletedUser = await userModel.findOneAndDelete({
+    email: "john@example.com",
+  });
+  res.send(deletedUser);
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
